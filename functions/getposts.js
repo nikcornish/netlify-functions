@@ -1,4 +1,4 @@
-const posts = require('./data/posts');
+const posts = require('./data/posts.json');
 
 exports.handler = async () => {
   return {
