@@ -1,4 +1,4 @@
-const posts = require('../data/posts');
+const posts = require('../data/posts.json');
 
 const findById = (id) => posts.find(post => post.id === id)
 
