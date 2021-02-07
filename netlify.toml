@@ -1,5 +1,12 @@
 [build]
   functions = "functions"
+
+# redirect workaround to allow post/id GET calls
+# higher priority than general redirect, hence placed higher in list
+[[redirects]]
+    from = "/api/post/*"
+    to = "/.netlify/functions/post?id=:splat"
+
 [[redirects]]
     from = "/api/*"
     to = "/.netlify/functions/:splat"
